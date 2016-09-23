@@ -1,0 +1,23 @@
+{
+	"name": "staticIPv4ethernet",
+	"text": "Static ethernet IPv4\\nIP adress: %1\\nSubnet mask: %2\\n",
+	"script": "staticIPv4ethernet.py",
+	"network": false,
+	"continue": true,
+	"type": "network",
+	"category": "network",
+	"shortDescription":"Sets static IP address for onboard ethernet port",
+	"longDescription":"Changes /etc/dhcpcd.conf to configure the ethernet interface for a static IP address and subnet mask.",
+	"args": [
+			 {
+			 "type": "text",
+			 "default": "192.168.0.0",
+			 "maxLength":15
+			 },
+			 {
+			 "type": "text",
+			 "default": "255.255.255.0",
+			 "maxLength":15
+			 }
+			 ]
+}
